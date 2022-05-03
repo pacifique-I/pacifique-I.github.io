@@ -1,0 +1,678 @@
+/* ALL ELEMENTS STYLING */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    cursor: default;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* BODY STYLING SECTION */
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #1d4a61;
+    position: relative;
+}
+
+/* NAVBAR ELEMENTS STYLING */
+.container .navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d4a61;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 100;
+}
+.container .navbar .links span{
+    margin-left: 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.active{
+    color: rgb(255, 44, 44);
+    margin-left: 15px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .navbar .links .contact{
+    background-color: #60ccf0;
+    color: #0b1d25;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.container .navbar .links .youtube{
+    background-color: #e64747;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-left: 100px;
+    padding: 5px 10px;
+    font-family: 'Riffic Free Medium';
+    cursor: pointer;
+}
+.container .navbar .links span:hover{
+    cursor: pointer;
+    color: #ffffff;
+    border-bottom: 1.4px solid #ffffff;
+}
+.container .navbar .links .contact:hover{
+    border: none;
+    background-color: #ffffff;
+    color: #0b1d25;
+}
+.container .navbar .links .youtube:hover{
+    border: none;
+}
+
+/* STYLING LOGOS SECTION */
+.container .links-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-right: 1.5px solid #60ccf0;
+    z-index: 100;
+}
+.container .links-social .link{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .links-social .link svg{
+    background-color: none;
+    color: #60ccf0;
+    fill: #60ccf0;
+    width: 20px;
+    height: 20px;
+}
+.container .links-social .link svg:hover{
+    fill: #ffffff;
+    color: #ffffff;
+}
+.container .links-social .link:hover{
+    cursor: pointer;
+}
+
+/* STYLING THE BOTTOM NAVIGATION BUTTONS */
+.container .bottom-slider{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.dot{
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0b1d25;
+    opacity: .3;
+}
+.activeDot{
+    background-color: #ff0015;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 1;
+}
+.container .bottom-slider .dot:hover{
+    background-color: #60ccf0;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* STYLING ARROW NAVIGATION */
+.container .arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    background-color: #0b1d25c2;
+    border-radius: 4px;
+    z-index: 100;
+    cursor: pointer;
+    opacity: .3;
+}
+.container .arrow:hover{
+    opacity: .8;
+}
+.container .prev{
+    transform: translateX(-700%) translateY(-50%);
+}
+.container .next{
+    transform: translateX(600%) translateY(-50%);
+}
+
+
+/* GENERAL PAGE STYLES */
+.container .page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container .page-container .page{
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+
+/* STYLING THE HOME PAGE  */
+.container .page-container .home{
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container .page-container .home .back-word{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.container .page-container .home .back-word span{
+    font-family: 'Riffic Free Medium';
+    font-size: 400px;
+    font-weight: 900;
+    color: #0b1d25;
+    opacity: .1;
+    cursor: default;
+}
+.container .page-container .home .content{
+    z-index: 2;
+}
+.container .page-container .home .content h1{
+    text-align: center;
+    font-family: 'Riffic Free Medium';
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: .7;
+}
+.container .page-container .home .content .paragraphs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.container .page-container .home .content .paragraphs p{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    opacity: .7;
+}
+.container .page-container .home .content .paragraphs .first{
+    border-right: 2.3px solid #ffffff;
+    margin-right: 10px;
+    padding: 10px 25px;
+    text-align: right;
+}
+.container .page-container .home .content .paragraphs .second{
+    margin-left: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.container .page-container .home .content .links{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+.container .page-container .home .content .links a{
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: 'Riffic Free Medium';
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+}
+.container .page-container .home .content .links .fiverr{
+    background-color: rgb(3, 3, 22);
+    cursor: pointer;
+}
+.container .page-container .home .content .links .youtube{
+    background-color: rgb(252, 30, 30);
+    cursor: pointer;
+}
+
+
+/* STYLING PROJECTS PAGE */
+.container .page-container .projects{
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 20px;
+}
+.container .page-container .projects .back-word{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.container .page-container .projects .back-word span{
+    font-family: 'Riffic Free Medium';
+    font-size: 200px;
+    font-weight: 900;
+    color: #0b1d25;
+    opacity: .1;
+    cursor: default;
+}
+.container .page-container .projects .content{
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+.container .page-container .projects .content h1{
+    text-align: center;
+    font-family: 'Riffic Free Medium';
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: .7;
+    margin: 10px 10px 30px 10px;
+}
+.container .page-container .projects .content .projects-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    margin: 5px auto;
+}
+.container .page-container .projects .content .projects-container .project{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.container .page-container .projects .content .projects-container .project img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transform: scale(1.2);
+    transition: all ease-in-out .4s;
+}
+.container .page-container .projects .content .projects-container .project .description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.911);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+.container .page-container .projects .content .projects-container .project .description span,a{
+    font-family: 'Riffic Free Medium';
+    font-size: 27px;
+    font-weight: 900;
+    color: #ffffff;
+    opacity: .9;
+    cursor: default;
+    text-align: center;
+}
+.container .page-container .projects .content .projects-container .project:hover{
+    cursor: pointer;
+}
+.container .page-container .projects .content .projects-container .project:hover img{
+    transform: scale(1);
+    transition: .2;
+}
+.container .page-container .projects .content .projects-container .project:hover .description{
+    height: 100%;
+}
+.container .page-container .projects .content .links{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+}
+.container .page-container .projects .content .links a{
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: 'Riffic Free Medium';
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+}
+.container .page-container .projects .content .links .github{
+    background-color: rgb(15, 15, 15);
+    cursor: pointer;
+}
+
+/* STYLING ABOUT PAGE */
+.container .page-container .about{
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 200%;
+    margin-top: 20px;
+}
+.container .page-container .about .back-word{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.container .page-container .about .back-word img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .1;
+}
+.container .page-container .about .content{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container .page-container .about .content .card{
+    height: 60%;
+    width: 20%;
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.911);
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+}
+.container .page-container .about .content .card .button{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #fff;
+    color: rgb(17, 17, 17);
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+}
+.container .page-container .about .content .card .button:hover{
+    cursor: pointer;
+}
+.container .page-container .about .content .card .title{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all ease-in-out .3s;
+}
+.container .page-container .about .content .card .title span{
+    font-family: 'Riffic Free Medium';
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+.container .page-container .about .content .card:hover{
+    border-top: 4px solid #fff;
+}
+.container .page-container .about .content .card:hover .button{
+    opacity: 1;
+}
+.container .page-container .about .content .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    filter: blur(5px);
+    z-index: 1;
+    transition: all ease-in-out .4s;
+}
+.container .page-container .about .content .card:hover img{
+    opacity: .1;
+    transition: .2s;
+}
+.container .page-container .about .content .card:hover .title{
+    top: 35px;
+    transition: .2s;
+}
+.container .page-container .about .content .card .info{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all ease-in-out .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    opacity: 0;
+}
+.container .page-container .about .content .card .info p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.container .page-container .about .content .card:hover .info{
+    height: 100%;
+    opacity: .9;
+    transition: .2s;
+}
+.container .page-container .about .content .card ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.container .contact-me-page{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    right: -100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0b1d25c5;
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: all ease-in-out .6s;
+}
+.container .contact-me-page .content{
+    margin-top: 50px;
+}
+.container .contact-me-page .content h1{
+    text-align: center;
+    font-family: 'Riffic Free Medium';
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    margin: 20px auto;
+}
+.container .contact-me-page .content .name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+.container .contact-me-page .content .name input{
+    background: none;
+    border: 1px solid #215064;
+    border-left: 3px solid #fff;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    font-family: 'consolas';
+    font-size: 18px;
+}
+.container .contact-me-page .content .email{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+.container .contact-me-page .content .email input{
+    background: none;
+    border: 1px solid #215064;
+    border-left: 3px solid #fff;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    font-family: 'consolas';
+    font-size: 18px;
+}
+.container .contact-me-page .content .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+.container .contact-me-page .content .text textarea{
+    background: none;
+    border: 1px solid #215064;
+    border-left: 3px solid #fff;
+    border-radius: 3px;
+    height: 200px;
+    width: 100%;
+    font-family: 'consolas';
+    font-size: 18px;
+}
+.container .contact-me-page .content .send{
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    margin: 10px;
+}
+.container .contact-me-page .content .send input{
+    width: 100%;
+    text-align: center;
+    background-color: #2bff35;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 800;
+}
+.container .contact-me-page .content .contact-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 10px auto;
+}
+.container .contact-me-page .content .contact-buttons a{
+    padding: 10px 20px;
+    font-family: 'raleway';
+    font-weight: 600;
+    font-size: 19px;
+    border-radius: 4px;
+    background-color: rgb(3, 3, 22);
+    cursor: pointer;
+}
+.container .contact-me-page .content .contact-buttons a:hover{
+    background-color: #e64747;
+}
+.container .contact-me-page .content .close{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-90%);
+    margin: 20px;
+    cursor: pointer;
+}
+.container .contact-me-page .content .close span{
+    font-weight: 800;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
